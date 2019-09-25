@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#fio {
+    position: relative;
+    left: 48.5%;
+    height: 250px;
+    width: 5px;
+    background: #2e2d2d;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+#ControllerHolder {
+    display: flex;
+}
+
+#LRad, #RRad, #mainController {
+    display: inline-flex;
+}
+
+#LRad {
+    left: 305px;
+}
+#RRad {
+    left: 50px;
+}
+
+#LRad, #RRad {
+    background: #c0c5c9;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%; 
+    border: 3px solid black;
+    position: relative;
+}
+
+#mainController {
+    position: relative;
+    background: #c0c5c9;
+    width: 400px;
+    height: 200px;
+    border-top: 3px solid black;
+    z-index: 1;
+    left: 180px;
+}
+
+.blckLine {
+    position: relative;
+    height: 3px;
+    background: black;
+    width: 200px;
+    top: 178px;
+    left: 97px;
+}
+
+#leftController, #RightController {
+    z-index: 2;
+}
+
+#RightController {
+    position: relative;
+    background: #7f90a2;
+    height: 220px;
+    width: 220px;
+    border-radius: 100%;
+    left: 15px;
+    top: 15px;
+}
+
+.btnHolder {
+    background: #c0c5c9;
+    width: 125px;
+    height: 50px;
+    border-radius: 25px;
+    position: relative;
+    transform: rotate(-30deg);
+}
+
+#RightController button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+#btn1 {
+    left: 25px;
+    top: 60px;
+}
+
+#btn2 {
+    left: 75px;
+    top: 60px;
+}
+
+.green {
+    background: green;
+}
+.yellow {
+    background: yellow;
+}
+.red {
+    background: red;
+    margin-left: 26px !important;
+}
+.blue {
+    background: blue;
+    margin-left: 26px !important;
+}
+#btnSS {
+    position: relative;
+    left: 150px;
+    top: 120px;
+}
+#btnSS button {
+    width: 50px;
+    height: 15px;
+    border-radius: 8px;
+    border: 2px solid black;
+    background: #5d6f7b;
+    transform: rotate(-30deg);
+}

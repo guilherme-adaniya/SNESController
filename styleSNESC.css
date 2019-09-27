@@ -3,9 +3,13 @@
     padding: 0;
 }
 
+body {
+    overflow: hidden;
+}
+
 #fio {
     position: relative;
-    left: 48.5%;
+    left: 625px;
     height: 250px;
     width: 5px;
     background: #2e2d2d;
@@ -15,6 +19,8 @@
 
 #ControllerHolder {
     display: flex;
+    position: relative;
+    bottom: 92px;
 }
 
 #LRad, #RRad, #mainController {
@@ -23,9 +29,11 @@
 
 #LRad {
     left: 305px;
+    box-shadow: inset 5px -5px aliceblue;
 }
 #RRad {
     left: 50px;
+    box-shadow: inset -5px -5px aliceblue;
 }
 
 #LRad, #RRad {
@@ -68,6 +76,7 @@
     border-radius: 100%;
     left: 15px;
     top: 15px;
+    box-shadow: inset 3px 3px slategray;
 }
 
 .btnHolder {
@@ -85,6 +94,7 @@
     border-radius: 100%;
     border: 2px solid black;
     margin: 5px;
+    box-shadow: inset 2px 2px aliceblue;
 }
 
 #btn1 {
@@ -113,7 +123,7 @@
 }
 #btnSS {
     position: relative;
-    left: 150px;
+    left: 145px;
     top: 120px;
 }
 #btnSS button {
@@ -123,4 +133,184 @@
     border: 2px solid black;
     background: #5d6f7b;
     transform: rotate(-30deg);
+    box-shadow: inset 2px 2px aliceblue;
+}
+
+#leftController {
+	border-radius: 100%;
+	border: 1px solid;
+	width: 150px;
+	height: 150px;
+	position: relative;
+	left: 50px;
+    top: 50px;
+    box-shadow: inset 5px -5px aliceblue;
+}
+
+#leftController button {
+    width: 30px;
+    height: 30px;
+}
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+    border-bottom: 16px solid rgb(44, 43, 43);
+    margin-left: 5px;
+}
+.ST {
+    border-bottom: unset !important;
+    left: 60px;
+    top: 31px;
+}
+.SL {
+    border-left: unset !important;
+    left: 55px;
+    top: 58px;
+}
+.SR {
+    border-right: unset !important;
+    left: -37px;
+    top: 58px;
+}
+.SB {
+    border-top: unset !important;
+    left: -42px;
+    top: 85px;
+}
+
+.SC {
+    position: relative;
+    background: #464c4f;
+    width: 28px;
+    height: 26px;
+    left: 61px;
+    top: 29px;
+}
+
+.ST, .SL, .SR {
+    box-shadow: inset 0px 2px aliceblue;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(44, 43, 43);
+    border-radius: 100%;
+    left: 2px;
+    top: 2px;
+    position: relative;
+}
+
+.SL > .triangle-up {
+    transform: rotate(90deg); 
+}
+.SB > .triangle-up {
+    transform: rotate(180deg); 
+}
+.SR > .triangle-up {
+    transform: rotate(270deg); 
+}
+
+.ST, .SB, .SR, .SL {
+    background: #464c4f;
+    border: 2px solid black;
+    position: relative;
+}
+
+
+.sombra {
+    width: 600px;
+    height: 30px;
+    border-radius: 100%;
+    background: gray;
+    opacity: .5;
+    position: relative;
+    left: 333px;
+    top: 30px;
+}
+
+.BGPadrao {
+    background: white;
+    border-radius: 50%;
+    animation: shrink 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes shrink {
+    from {
+        transform: scale(35);
+    } to {
+        transform: scale(0);
+    }
+}
+
+.greenBG {
+    background: green;
+    border-radius: 50%;
+    animation: grow 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0);
+    } to {
+        transform: scale(35);
+    }
+}
+
+.blueBG {
+    background: blue;
+    border-radius: 50%;
+    animation: grow 1s;
+    animation-fill-mode: forwards;
+}
+
+.yellowBG {
+    background: yellow;
+    border-radius: 50%;
+    animation: grow 1s;
+    animation-fill-mode: forwards;
+}
+
+.redBG {
+    background: red;
+    border-radius: 50%;
+    animation: grow 1s;
+    animation-fill-mode: forwards;
+}
+
+#cor {
+    z-index: -2;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 600px;
+    bottom: 205px;
+    border-radius: 50%;
+}
+
+#btnTL {
+    border-top-left-radius: 65%;
+    border-top-right-radius: 5px;
+    left: 360px;
+    bottom: 10px;
+}
+
+#btnTL, #btnTR {
+	width: 125px;
+    position: relative;
+    height: 40px;
+    background: #c0c5c9;
+    z-index: -1;
+    border: 3px solid black;
+}
+
+#btnTR {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 65%;
+    left: 777px;
+    bottom: 56px;
 }

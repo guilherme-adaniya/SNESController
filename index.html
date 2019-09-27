@@ -4,39 +4,46 @@
         <link rel="stylesheet" href="styleSNESC.css">
     </head>
     <body>
-        <div id="fio"></div>
-        <div id="ControllerHolder">
-            <div id="LRad">
-                <div id="leftController">
-                    <button class="ST"></button>
-                    <button class="SL"></button>
-                    <button class="SR"></button>
-                    <button class="SB"></button>
-                </div>
-            </div>
-            <div id="mainController">
-                <div id="MiddleController">
-                    <div id="btnSS">
-                        <button class="Sel"></button>
-                        <button class="Sta"></button>
-                    </div>
-                    <div id="labelSS"></div>
-                    <div class="blckLine"></div>
-                </div>
-            </div>
-            <div id="RRad">
-                <div id="RightController">
-                    <div class="btnHolder" id="btn1">
-                        <button class="green"></button>
-                        <button class="blue"></button>
-                    </div>
-                    <div class="btnHolder" id="btn2">
-                        <button class="yellow"></button>
-                        <button class="red"></button>
+        <main>
+            <div id="fio"></div>
+            <div id="btnTL"></div>
+            <div id="btnTR"></div>
+            <div id="ControllerHolder">
+                <div id="LRad">
+                    <div id="leftController">
+                        <button class="ST"><div class="triangle-up"></div></button>
+                        <button class="SL"><div class="triangle-up"></div></button>
+                        <button class="SR"><div class="triangle-up"></div></button>
+                        <button class="SB"><div class="triangle-up"></div></button>
+                        <div class="SC"><div class="circle"></div></div>
                     </div>
                 </div>
+                <div id="mainController">
+                    <div id="MiddleController">
+                        <div id="btnSS">
+                            <button class="Sel"></button>
+                            <button class="Sta"></button>
+                        </div>
+                        <div id="labelSS"></div>
+                        <div class="blckLine"></div>
+                    </div>
+                </div>
+                <div id="RRad">
+                    <div id="RightController">
+                        <div class="btnHolder" id="btn1">
+                            <button class="green" onclick="changeColor('green')"></button>
+                            <button class="blue" onclick="changeColor('blue')"></button>
+                        </div>
+                        <div class="btnHolder" id="btn2">
+                            <button class="yellow" onclick="changeColor('yellow')"></button>
+                            <button class="red" onclick="changeColor('red')"></button>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="sombra"></div>
+            <div class="sombra"></div>
+        </main>
+        <div id="cor"></div>
+        <script src="SNES.js"></script>
     </body>
 </html>

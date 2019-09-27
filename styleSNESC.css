@@ -228,7 +228,7 @@ body {
     opacity: .5;
     position: relative;
     left: 333px;
-    top: 30px;
+    top: -30px;
 }
 
 .BGPadrao {
